@@ -1,0 +1,7 @@
+C:\Users\y-meh\OneDrive\Bureau\projet\projet_dev\C#\Quizz_voiture\Jeu_Quizz_voiture\bin\Debug\Jeu_Quizz_voiture.exe.config
+C:\Users\y-meh\OneDrive\Bureau\projet\projet_dev\C#\Quizz_voiture\Jeu_Quizz_voiture\bin\Debug\Jeu_Quizz_voiture.exe
+C:\Users\y-meh\OneDrive\Bureau\projet\projet_dev\C#\Quizz_voiture\Jeu_Quizz_voiture\bin\Debug\Jeu_Quizz_voiture.pdb
+C:\Users\y-meh\OneDrive\Bureau\projet\projet_dev\C#\Quizz_voiture\Jeu_Quizz_voiture\obj\Debug\Jeu_Quizz_voiture.csproj.AssemblyReference.cache
+C:\Users\y-meh\OneDrive\Bureau\projet\projet_dev\C#\Quizz_voiture\Jeu_Quizz_voiture\obj\Debug\Jeu_Quizz_voiture.csproj.CoreCompileInputs.cache
+C:\Users\y-meh\OneDrive\Bureau\projet\projet_dev\C#\Quizz_voiture\Jeu_Quizz_voiture\obj\Debug\Jeu_Quizz_voiture.exe
+C:\Users\y-meh\OneDrive\Bureau\projet\projet_dev\C#\Quizz_voiture\Jeu_Quizz_voiture\obj\Debug\Jeu_Quizz_voiture.pdb
