@@ -64,7 +64,7 @@ namespace Jeu_Quizz_voiture
 
             string niveau_joueur = niveau(points);
 
-            Console.Write($"Voici votre niveau : {niveau_joueur}");
+            Console.WriteLine($"Voici votre niveau : {niveau_joueur}");
 
             Console.WriteLine("Récapitulatif de votre partie");
             /*
