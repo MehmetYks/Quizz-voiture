@@ -13,7 +13,7 @@ namespace Jeu_Quizz_voiture
         {
             List<string> marque = new List<string>()
             {
-                "Mercedes", "BMW", "Volswagen", "Audi", "Peugeot", "Renault", "Citroën", "Hyundai", "Nissan", "Ferrari"
+                "Mercedes", "Peugeot", "Ferrari", "Volswagen", "Citroën", "BMW", "Hyundai", "Nissan", "Renault", "Audi"
             };
 
             List<string> pays = new List<string>()
@@ -30,9 +30,11 @@ namespace Jeu_Quizz_voiture
             Console.WriteLine("- expert pour un score de 10 points");
             Console.WriteLine("- bon niveau pour un score entre 7 et 9");
             Console.WriteLine("- moyen pour un score entre 4 et 6");
-            Console.WriteLine("- faible pour un score inférieur à 4");
+            Console.WriteLine("- faible pour un score inférieur à 4\n");
 
             int points = 0;
+            List<string> bonne_reponse = new List<string>();
+            List<string> mauvaise_reponse = new List<string>();
 
             // Poser la question
             foreach(var m in marque)
@@ -49,10 +51,12 @@ namespace Jeu_Quizz_voiture
                     if (check)
                     {
                         points++;
+                        bonne_reponse.Add(m);
                     }
                     else
                     {
                         Console.WriteLine("Mauvaise réponse");
+                        mauvaise_reponse.Add(m);
                     }
                 }
                 catch(Exception e)
@@ -63,16 +67,20 @@ namespace Jeu_Quizz_voiture
             }
 
             string niveau_joueur = niveau(points);
+            Console.WriteLine();
 
-            Console.WriteLine($"Voici votre niveau : {niveau_joueur}");
+            Console.WriteLine($"Voici votre niveau : {niveau_joueur}\n");
 
-            Console.WriteLine("Récapitulatif de votre partie");
-            /*
-             * ici dans le récapitulatif ajouter le nombre de bonne réponse le nombres de mauvaise réponse
-             * le point total
-             * afficher les bonne réponse et les mauvaises réponse ( idée = stocker dans une liste les bonne réponse et les mauvaises réponse par rapport à check faire deux liste bonne et mauvaise et stocker par rapport à check
-             * afficher la correction pour les mauvaises réponses ( voir pour methode)
-             */
+            Console.WriteLine("Récapitulatif de votre partie : ");
+
+            //nombre de bonne réponse et de mauvaise reponse
+            int reponse_ok = check_nb_bonne_reponse(bonne_reponse);
+            int reponse_mauvais = check_nb_mauvaise_reponse(mauvaise_reponse);
+            Console.WriteLine($"bonne reponse : {reponse_ok}");
+            Console.WriteLine($"mauvaise reponse : {reponse_mauvais}");
+
+            // le pooint total
+            Console.WriteLine($"Point total : {points}");
 
         }
 
@@ -141,6 +149,22 @@ namespace Jeu_Quizz_voiture
             }
 
             return niveaux;
+        }
+
+        // renvoie le nombre de bonne réponse 
+        static int check_nb_bonne_reponse(List<string> bonne_reponse)
+        {
+            int nb_b_reponse = bonne_reponse.Count;
+
+            return nb_b_reponse;
+        }
+
+        // renvoie le nombre de mauvaise reponse
+        static int check_nb_mauvaise_reponse(List<string> mauvaise_reponse)
+        {
+            int nb_m_reponse = mauvaise_reponse.Count;
+
+            return nb_m_reponse;
         }
     }
 }
